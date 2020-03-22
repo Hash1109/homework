@@ -4,16 +4,16 @@ What is Horiseon and what is used for?
 - Horisoen is a Marketing Agency which advises clients on SEO methods. The application is a website providing information.
  
 
-# Navigation Options
+## Navigation Options
 
 - There is a menu bar on the top of the page in it are three navigatonal options on the top right of the page.  
 - upon clicking each optional heading you are directed to its own content on the page, where there is a paragraph descibing itself.  
 
 # What did i do?
 
-# For my Homework/assignment i did the folowing:
+## For my Homework/assignment i did the folowing:
 
-# HTML
+## HTML
 - to ensure all the navigational links are working, 
 	i realised one of the navigational links was not working, an 'id' class was missing on one of the naviagation codes in the html file, 
 	once i had added the missing 'id' it began to work perfectly directing me to the correct place.
@@ -29,7 +29,7 @@ What is Horiseon and what is used for?
 	i used an optical format to give it a descriptive title.
 - Images of html coding - folder in homework (snapshots)
   
-# CSS
+## CSS
 - family font 'Calibri' was not working
 	i added the apostrophes to 'Calibri' in all the texts for 'menu', 'main' and 'aside' for it to work.
 - divs to semantic elements
@@ -46,6 +46,9 @@ What is Horiseon and what is used for?
 	the styling for images in the main contect were styled seperatly, i combined them into one.
 	the styling for images in the aside contect were styled seperatly, i combined them into one.
 - Images of css coding - folder in homework (snapshots)
-  
-# Link to URL
 
+## Link to Snapshots
+[https://github.com/Hash1109/homework/tree/master/week1/02-Homework/Develop/Snapshots]
+
+## URL For Deployed Website
+[https://hash1109.github.io/homework/week1/02-Homework/Develop/]
