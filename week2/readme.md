@@ -26,4 +26,4 @@ Some information about me, my qualifcations, my pictures, my favourite foods and
 - Images of css coding, html pages and responsive pages - folder in homework (snapshots)
 
 ## URL For Deployed Website
-[]
+[https://hash1109.github.io/homework/week2/index.html]
