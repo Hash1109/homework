@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title changed -->
+  <title>Homework 2 | Responsive | Pages Linked</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Added Bootstrap CDN Code For CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<!-- colour added to background -->
+
+<body style="background-color:rgb(208, 247, 252);">
+
+  <!-- Navbar -->
+  <!-- Mobile Navbar -->
+  <div id="is-mobile">
+    <header class="mobile-header-brand">
+      <p>Hasham Raoof</p>
+    </header>
+    <!-- navbar with links added -->
+    <nav class="mobile-navbar">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Desktop Navbar with added links -->
+  <div id="is-desktop">
+    <nav class="navbar navbar-expand-lg">
+      <section class="container">
+        <a class="navbar-brand" href="index.html" id="logo">
+          <h1>Hasham Raoof</h1>
+        </a>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <!-- main element contact form -->
+  <main class="row" id="form">
+    <section class="container">
+
+      <form class="form-horizontal" action="" method="post">
+        <fieldset>
+          <legend>Contact</legend>
+
+          <!-- Name input-->
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="name">Name</label>
+            <div class="col-md-9">
+              <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+            </div>
+          </div>
+
+          <!-- Email input-->
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="email">Your E-mail</label>
+            <div class="col-md-9">
+              <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+            </div>
+          </div>
+
+          <!-- Message body -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="message">Your message</label>
+            <div class="col-md-9">
+              <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..."
+                rows="7"></textarea>
+            </div>
+          </div>
+
+          <!-- Form actions -->
+          <div class="form-group">
+            <div class="col-md-9 text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer with information -->
+  <footer class="fixed-bottom">
+    <h6>&copy 2020 Hash</h6>
+  </footer>
+
+</body>
+
+</html>

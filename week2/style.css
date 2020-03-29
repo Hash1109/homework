@@ -1,0 +1,105 @@
+/* css for desktop nav bar for all pages */
+.navbar
+{
+    box-shadow: 0 5px 10px black; 
+    background-color: #D3D3D3;
+}
+
+/* css for heading tahes for all pages */
+h3 {
+    text-align: center;
+}
+
+/* css for backfround colour in containers for about me and portfolio pages */
+.container {
+    background-color: #D3D3D3;
+    margin: 10px;
+}
+
+/* css for images with padding in about me page */
+#indeximg {
+    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+/* css for to line up padding with image in about me page */
+.qual {
+    margin-top: 15px;
+}
+
+/* css for images in line on portfolio page */
+#portimages {
+    width: 100%;
+}
+
+/* css for heading tag on contact page */
+legend {
+    text-align: left;
+}
+
+/* css for contact page */
+#form {
+    margin: 20px;
+    justify-content: center;
+}
+
+/* css for footer for all pages */
+.fixed-bottom {
+    background-color: #D3D3D3;
+    height: 40px; 
+    box-shadow: 0 5px 10px 15px black;
+    text-align: center; 
+    padding-top: 10px;
+}
+
+/* Navbar Mobile */
+
+.mobile-header-brand {
+    background-color: rgb(48, 59, 59);
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 60px
+}
+
+.mobile-navbar {
+    list-style: none;
+    background-color: white;
+}
+
+.mobile-navbar > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-navbar > ul > li {
+    display: inline;
+    margin: 0 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* media screen to ensure responsiveness */
+
+@media screen and (min-width: 700px) {
+    #is-mobile {
+        display: none;
+    }    
+    #is-desktop {
+        display: unset;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #is-mobile {
+        display: unset;
+    }    
+    #is-desktop {
+        display: none;
+    }
+}
