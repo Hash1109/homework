@@ -28,6 +28,9 @@ Images of js coding, html pages online in working order - folder in homework (sn
 
 
 ## Links
-S
-URL For Deployed Pages
-[]
+
+URL For Deployed Page
+[https://hash1109.github.io/homework/week3/]
+
+URL For Git Hub Page
+[https://github.com/Hash1109/homework/edit/master/week3]
