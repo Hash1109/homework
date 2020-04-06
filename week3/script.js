@@ -15,7 +15,7 @@ var generateBtn = document.querySelector("#generate");
 // Password Characters, Numbers & Letters (Upper Case & Lower Case): 
 
 // Array of Special Characters:
-Characters = ["=", " > ", " ? ", "@", "[", "]", "_", "{", "|", "}", "~", "!", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", ".", "<"];
+Characters = ["=", ">", "?", "@", "[", "]", "_", "{", "|", "}", "~", "!", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", ".", "<"];
 
 // Array of Numbers:
 Numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
