@@ -33,32 +33,40 @@
   <script>
 
     // Javascrpit Working out the Score, and listing it in order on  High Score Page //
+    
+    // Variables Listed 
     var username = document.getElementById("username");
     var saveScoreBtn = document.getElementById("saveScoreBtn");
     var finalScore = document.getElementById("finalScore");
     var mostRecentScore = localStorage.getItem("mostRecentScore");
-
     var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
+    // save only 5 highest cores 
     var MAX_HIGH_SCORES = 5;
 
     finalScore.innerText = mostRecentScore;
 
+    // Event Listener - Player Inputs Name to Save Score
     username.addEventListener("keyup", () => {
       saveScoreBtn.disabled = !username.value;
     });
 
+    // Fuction to save score
     saveHighScore = event => {
       event.preventDefault();
 
+      // variable inside a function
       var score = {
         score: mostRecentScore,
         name: username.value
       };
+
+      // to recored highest score to the lowest
       highScores.push(score);
       highScores.sort((a, b) => b.score - a.score);
       highScores.splice(5);
 
+      // scores saved in local storage 
       localStorage.setItem('highScores', JSON.stringify(highScores));
       window.location.assign('mainpage.html');
     };

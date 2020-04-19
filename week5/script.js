@@ -1,3 +1,6 @@
+// Javacript Codes
+
+// Variables Listed
 var appointText = "";
 var appointTime = "";
 var currentDate;
@@ -7,13 +10,13 @@ var tempArray = [];
 var storedAppointments;
 var returnedAppointments;
 
-
-
+// Implementing Moment JS
 $(window).on("load", function () {
     currentDate = moment().format("dddd MMM Do YYYY, h:mm a");
     $("#currentDay").append(currentDate);
     currentTime = moment().format("H");
 
+    // Finction to store appointmnets to slots 
     function renderAppointments() {
         storedAppointments = JSON.parse(localStorage.getItem("appointments"));
         if (storedAppointments !== null) {
@@ -31,6 +34,7 @@ $(window).on("load", function () {
 
     renderAppointments();
 
+    // for loop to go through go through the slots whilst time passes
     for (i = 0; i <= 23; i++) {
         currentContainer = i;
         if (currentTime == i) {
@@ -49,7 +53,7 @@ $(window).on("load", function () {
 })
 
 
-
+// Added Event Listener to save text in slots
 $(".saveBtn").click(function () {
     appointText = $(this).parent('div').children('div').children('textarea').val();
     appointTime = $(this).parent('div').parent().attr("id");

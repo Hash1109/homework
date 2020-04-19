@@ -1,5 +1,6 @@
 // JS For Questions.html Page
 
+// Variables Listed
 var questionElement = document.getElementById("question");
 var choices = Array.from(document.getElementsByClassName("choice-text"));
 var progressText = document.getElementById("progressText");
@@ -13,8 +14,11 @@ var questionCounter = 0;
 var availableQuesions = [];
 
 var timerInterval;
+
+// Time given for game - 60 seconds 
 var timerCount = 60;
 
+// Variable including Array of Question Data
 var questionsData = [
     {
         question: "‘Table Mountain’ is located at which place?",
@@ -63,6 +67,7 @@ var questionsData = [
 var CORRECT_BONUS = 10;
 var MAX_QUESTIONS = 5;
 
+// Lauch the Game
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -71,6 +76,7 @@ startGame = () => {
     getNewQuestion();
 };
 
+// Countdown Function
 timer = () => {
     timerCount--;
     if (timerCount === 0) {
@@ -83,6 +89,7 @@ timer = () => {
     }
 };
 
+// function increases the question counter until it reaches last question in the array
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         clearInterval(timerInterval);
@@ -95,10 +102,12 @@ getNewQuestion = () => {
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
+    // Pick Out Questions at Random
     var questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
 
+    // function for array answers for each question
     choices.forEach(choice => {
         var number = choice.dataset["number"];
         choice.innerText = currentQuestion["choice" + number];
@@ -108,6 +117,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
+// event listener for every wromg or right clicked answer
 choices.forEach(choice => {
     choice.addEventListener("click", event => {
         if (!acceptingAnswers) return;
@@ -116,6 +126,7 @@ choices.forEach(choice => {
         var selectedChoice = event.target;
         var selectedAnswer = selectedChoice.dataset["number"];
 
+        // fuction for correct answer will increses point by 10, incorrect answer will decrease time by 10
         var classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
@@ -134,6 +145,7 @@ choices.forEach(choice => {
     });
 });
 
+// when function called score is added
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
