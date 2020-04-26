@@ -1,25 +1,3 @@
-# DailyPlanner
-
-Work day scheduler for clear task management. Tasks are saved for each hour of the work day. The app uses a color scheme to quickly distinguish the current hour (gray), past (red) and future(green).
-
-# User
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-
-# Features
-Use of MomentJS
-Shows current date and time
-Dynamically generated content
-Fully responsive
-Stack used
-HTML
-CSS
-JS
-
-
-
-
 ## For my Homework 4 - Daily Planner The following was done:
 
  - Created a html a document which contained divs for the calender slots and boyyons to save.
@@ -45,7 +23,7 @@ Images of html, css and js coding, html pages online in working order - folder i
 ## Links
 
 URL For Deployed Page
-[]
+[https://hash1109.github.io/homework/week5/index.html]
 
 URL For Git Hub Page
-[]
+[https://github.com/Hash1109/homework/edit/master/week5]
