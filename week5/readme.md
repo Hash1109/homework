@@ -1,4 +1,4 @@
-## For my Homework 4 - Daily Planner The following was done:
+## For my Homework 5 - Daily Planner The following was done:
 
  - Created a html a document which contained divs for the calender slots and boyyons to save.
  - Created a javascipt file, within it a number of variables were created so they could easily called upon whilst using functions.
